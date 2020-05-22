@@ -1,80 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
-    <link rel="stylesheet" href="css/restaurant.css">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="css/restaurant.css">
+
   <style>
-      
+    h1,
+    p {
+      color: green;
+    }
 
-      
-    
-    h1, p{
-        color:green;
-       }
- 
-     p{
-        font-size: 22px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        /*font-size: 2em;*/
-     }
- 
-      a{
-        margin-left: 250px;
-        font-family:cursive;
-        text-decoration: none;
-        color: darkblue;
-      }
+    section h2 {
+      font-size: 22px;
+      text-align: center;
+    }
 
-      u{
+    p {
+      text-align: center;
+      font-size: 22px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      /*font-size: 2em;*/
+    }
 
-      
-        color:green
-         
+    section,
+    p {
+      margin-bottom: 3px;
+    }
 
-      }
 
-      h2{
-      margin-left: 110px;
-          
-      }
+    u {
+
+
+      color: green
+    }
+
+
+    #h1App {
+      text-align: center;
+    }
+
+    #divChickenSoup {
      
+      
+
+      float: left;
+
+
+    }
+
+
+    #divFriedWings {
+      
+      
+      float: left;
+    }
+
+    #divRibs {
+      
+      float: left;
+
+
+    }
+
+    #sectionMenu {
+      overflow: auto;
+      text-align: center;
+      max-width: 1000px;
+     border: 3px solid green;
+    }
+
+    #divFriedWings,
+    #divRibs,
+    #divChickenSoup {
+      /*border: 1px solid green;*/
+      width: 200px;
+      margin-left: 95px;
+
+    }
+
+    #divRibs,
+    #divChickenSoup {
+     
+
+    }
+
+
+    .chWingsPix,
+    .chickenSoupPic,
+    .ribspic {
+      width: 200px;
+      height: 200px;
+      border: 3px solid green;
+
+    }
+
+     #HeaderApp{
+       margin-bottom: 50px;
+       font-size: 30px;
+     }
+
+     header{
+      border: 3px solid green;
+      max-width: 1000px;
+     }
 
   </style>
 
 </head>
+
 <body>
-  <a href="Index.html">Home</a> <a href="menu.html">Menu</a><a href="contactUs.html">Contact us</a>
-   <hr>
-  <h1>Dan's Kosher Steak House Menu</h1>
- 
+  <header>
+    <a href="Index.html">Home</a> <a href="menu.html">Menu</a><a href="contact.html">Contact us</a>
+    <hr>
+    <h1>Dan's Kosher Steak House Menu</h1>
+
     <img class="mainpx" src="images/restaurant.jpg" alt="Our Restaurant">
-    
-      <hr>
-      
-      <h1>Appetizers</h1>
-  
+
+   
+  </header>
+
+  <section id="sectionMenu">
+
+    <div id="HeaderApp">
+
+      <h1 id="h1App">Appetizers</h1>
+
+    </div>
+
+
+
+    <div id="divFriedWings">
+
       <h2>Fried Chicken Wings</h2>
+
+      <img class="chWingsPix" src="images/friedchickenwings.jpg" alt="friedChickenWings">
+
+      <p>$5.99</p>
+    </div>
+
+    <div id=divChickenSoup>
+      <h2>Chicken Soup</h2>
+
+      <img class="chickenSoupPic" src="images/chickensoup.jpg" alt="chickensoup">
+
+      <p>$4.50</p>
+    </div>
+
+    <div id=divRibs>
+      <h2>BBQ Ribs</h2>
+
+      <img class="ribspic" src="images/ribs.jpg" alt="BBQ Ribs">
+
+      <p>$9.50</p>
+    </div>
+
+  
+  </section>
+
+
+ 
+    <section id="sectionMenu">
     
-       <img class="chWingsPix" src="images/friedchickenwings.jpg" alt="friedChickenWings">
+      <div id="HeaderApp">
 
-       <p style="margin-left: 150px;">$5.99</p>
-     <br>
-       <h2>Chicken Soup</h2>
-
-       <img class="chickensoup" src="images/chickensoup.jpg" alt="chickensoup">
-
-       <p style="margin-left: 150px;">$4.50</p>
+        <h1 id="h1App">Main Course</h1>
+  
+      </div>
 
 
+      <div id="divFriedWings">
 
-      
-      
-     
-    
-     <br>
-      <p> &copy; Dan's Steakhouse 2020</p>
-   </body>
+        <h2>Rib Eye Steak</h2>
+  
+        <img class="chWingsPix" src="images/steak.jpg" alt="Steak">
+  
+        <p>$45.99</p>
+      </div>
+
+
+      <div id=divChickenSoup>
+        <h2>Burger</h2>
+  
+        <img class="chickenSoupPic" src="images/burger.jpg" alt="Burger">
+  
+        <p>$15.50</p>
+      </div>
+
+
+
+      <div id=divRibs>
+        <h2>Boneless Chicken</h2>
+  
+        <img class="ribspic" src="images/pargiot.jpg" alt="Pargiot">
+  
+        <p>$20.50</p>
+      </div>
+
+
+
+    </section>
+
+
+
+
+  <br>
+  <footer>
+    <p> &copy; Dan's Steakhouse 2020</p>
+  </footer>
+
+</body>
+
 </html>
