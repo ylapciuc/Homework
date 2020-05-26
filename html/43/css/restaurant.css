@@ -1,0 +1,52 @@
+html{
+    background-color: black;
+}
+
+header h1{
+    text-align: center;
+}
+
+body{
+    background-color: lightcoral;
+   /* max-width: 800px;*/
+     width: 80%;
+     
+    margin:auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:20px;
+    padding-bottom: 110px;
+   
+    
+}
+.mainpx{
+    border: 5px solid green;
+   
+    max-width:500px;
+    
+}
+
+
+
+header {
+  
+    text-align: center;
+    
+  
+  }
+
+
+  header a{
+    margin-right: 10%;
+    font-family: cursive;
+    text-decoration: none;
+    color: darkblue;
+  }
+  a:hover{
+      text-decoration:underline ;
+  }
+  
+
+  #indexSection{
+      text-align: center;
+  }
