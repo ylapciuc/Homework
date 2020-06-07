@@ -1,0 +1,67 @@
+html{
+    background-color: black;
+}
+
+header h1{
+    text-align: center;
+}
+
+body{
+    background-color: lightcoral;
+   /* max-width: 800px;*/
+   width: 1079px;
+     
+    margin:auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:20px;
+    padding-bottom: 110px;
+   
+    
+}
+.mainpx{
+    border: 5px solid green;
+   
+    max-width:500px;
+    
+}
+
+
+
+header {
+  
+    text-align: center;
+    
+  
+  }
+
+
+  header a{
+    margin-right: 10%;
+    font-family: cursive;
+    text-decoration: none;
+    color: darkblue;
+  }
+  a:hover{
+      text-decoration:underline ;
+  }
+  
+
+  #indexSection{
+      text-align: center;
+  }
+
+  nav{
+    
+    position: fixed;
+    width: 1079px;
+    left: 10;
+    top: 0;
+    background-color: lightcoral;
+  }
+
+  nav ul li{
+    list-style-type: none;
+    display: inline;
+    
+  }
