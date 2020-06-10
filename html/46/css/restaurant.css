@@ -11,8 +11,8 @@ header h1{
 
 body{
     background-color: lightcoral;
-   /* max-width: 800px;*/
-   width: 1079px;
+    max-width: 1200px;
+  
      
     margin:auto;
     padding-left: 30px;
@@ -32,9 +32,9 @@ body{
 
 
 header {
-  
+    max-width: 1200px;
     text-align: center;
-    
+
   
   }
 
@@ -57,11 +57,15 @@ header {
   nav{
     
     position: fixed;
-    width: 1079px;
+    width: 60%;
     left: 10;
     top: 0;
     background-color: lightcoral;
   }
+
+  ul{}
+
+
 
   nav ul li{
     list-style-type: none;

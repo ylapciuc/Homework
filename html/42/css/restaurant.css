@@ -8,14 +8,11 @@ header h1{
 
 body{
     background-color: lightcoral;
-   /* max-width: 800px;*/
-     width: 80%;
+    max-width:800px;
+     
      
     margin:auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top:20px;
-    padding-bottom: 110px;
+   
     
    
     
@@ -41,7 +38,7 @@ header {
     margin-right: 10%;
     font-family: cursive;
     text-decoration: none;
-    color: darkblue;
+    color: rgb(40, 40, 92);
   }
   a:hover{
       text-decoration:underline ;
