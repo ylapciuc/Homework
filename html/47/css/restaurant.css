@@ -1,0 +1,76 @@
+
+
+html{
+
+    background-color: black;
+}
+
+header h1{
+    text-align: center;
+ 
+}
+
+body{
+    background-color: lightcoral;
+    max-width: 90%;
+    
+     
+    margin:auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:20px;
+    padding-bottom: 110px;
+   
+    
+}
+.mainpx{
+    border: 5px solid green;
+   
+    width:30%;
+    margin: auto;
+    
+}
+
+
+
+header {
+    max-width: 100%;
+    text-align: center;
+
+  
+  }
+
+
+  header a{
+    margin-right: 10%;
+    font-family: cursive;
+    text-decoration: none;
+    color: darkblue;
+  }
+  a:hover{
+      text-decoration:underline ;
+  }
+  
+
+  #indexSection{
+      text-align: center;
+  }
+
+  nav{
+    
+    position: fixed;
+    width: 90%;
+    left: 10;
+    top: 0;
+    background-color: lightcoral;
+  }
+
+  ul{}
+
+
+
+  nav ul li{
+    list-style-type: none;
+    display: inline;
+    
+  }

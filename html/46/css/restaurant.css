@@ -7,12 +7,13 @@ html{
 
 header h1{
     text-align: center;
+ 
 }
 
 body{
     background-color: lightcoral;
-    max-width: 1200px;
-  
+    max-width: 90%;
+    
      
     margin:auto;
     padding-left: 30px;
@@ -25,14 +26,15 @@ body{
 .mainpx{
     border: 5px solid green;
    
-    max-width:500px;
+    width:30%;
+    margin: auto;
     
 }
 
 
 
 header {
-    max-width: 1200px;
+    max-width: 100%;
     text-align: center;
 
   
@@ -57,7 +59,7 @@ header {
   nav{
     
     position: fixed;
-    width: 60%;
+    width: 90%;
     left: 10;
     top: 0;
     background-color: lightcoral;

@@ -50,19 +50,16 @@
 
 
         .divtable {
-            max-width: 1200px;
+            max-width: 100%;
             text-align: center;
             margin-top: 150px;
         }
 
         table {
-
+            max-width:100%;
             margin: auto;
-
-
-
-
             border-collapse: collapse;
+            box-sizing: border-box;
 
         }
 
@@ -70,7 +67,7 @@
         th {
             border: 4px solid darkgreen;
             padding: 25px;
-            box-sizing: border-box;
+            
             font-weight: bolder;
         }
 
@@ -78,6 +75,7 @@
 
         @media only screen and (max-width: 800px) {
             td,th{
+                
                 padding:0px;
                 box-sizing: border-box;
             }
@@ -85,7 +83,7 @@
 
         .divtable h1 {
             font-size: 40px;
-            color: darkred;
+            color:red;
 
         } 
 
@@ -110,6 +108,8 @@
             background-color: lightslategray;
 
         }
+
+  
     </style>
 </head>
 
@@ -146,9 +146,9 @@
     </div>
 
     <div class="divtable">
-        <h1>July 2020</h1>
+        <h1 id="month" onmouseover="mouseOver()">July 2020</h1>
 
-        <table>
+        <table id="table">
 
             <thead>
                 <tr>
@@ -240,6 +240,31 @@
 
     </div>
 
+
+    
+
+    <script>
+    function mouseOver() {
+        var element = document.getElementById('month');
+        var element2 = document.getElementById('table');
+         
+        if(element.innerText =='July 2020'){
+             
+            element.innerText = 'Tamuz 5780';
+            element.style.color = 'darkred';
+           
+         }
+         else{
+            element.innerText = 'July 2020';
+            element.style.color = 'darkgreen';
+
+         }
+      
+  
+    }
+    
+  
+    </script>
 
 
 

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="icon" href="images/restaurant.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+
+    <style>
+        
+        h1 {
+            color: green;
+        }
+
+        #contactdiv {
+            border: 5px solid green;
+            max-width: 500px;
+            margin: auto;
+            padding-bottom: 30px;
+
+
+            margin-top: 88px;
+            font-family: cursive;
+            text-align: center;
+
+
+
+        }
+
+        #contactsection {
+            border: 5px solid green;
+            max-width: 1000px;
+            height: 460px;
+
+
+
+        }
+
+
+        nav a {
+            font-family: 'Piedra', cursive;
+            font-size: 22px;
+            color: green;
+        }
+
+
+        .divtable {
+            max-width: 100%;
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        table {
+            max-width:100%;
+            margin: auto;
+            border-collapse: collapse;
+            box-sizing: border-box;
+
+        }
+
+        td,
+        th {
+            border: 4px solid darkgreen;
+            padding: 25px;
+            
+            font-weight: bolder;
+        }
+
+
+
+        @media only screen and (max-width: 800px) {
+            td,th{
+                
+                padding:0px;
+                box-sizing: border-box;
+            }
+        }
+
+        .divtable h1 {
+            font-size: 40px;
+            color:red;
+
+        } 
+
+        .divtable h1:hover{
+         
+         
+        }
+
+        
+
+
+        tbody tr:hover,
+        thead:hover {
+            background-color: lightblue !important;
+            /*!important wins over more powerful selector thar follows*/
+            color: lightcoral;
+        }
+
+
+
+        tbody tr:nth-child(odd) {
+            background-color: lightslategray;
+
+        }
+
+  
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="Index.html">Home</a></li>
+                <li> <a href="menu.html">Menu</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="video.html">Video</a></li>
+
+            </ul>
+
+
+        </nav>
+    </header>
+
+
+
+    <div id="contactdiv">
+        <h2>Store Hours:</h3>
+            <p>Monday - Friday: 11am - 2pm; 4pm - 9pm
+                <br>
+                ​Sunday: 11:30pm - 9pm
+                <br>
+                ​​Saturday:Closed
+
+            </p>
+            <h2>Business Contact:</h2>
+            <p>
+                (305)331-0940
+            </p>
+    </div>
+
+    <div class="divtable">
+        <h1 id="month" onmouseover="mouseOver()">July 2020</h1>
+
+        <table id="table">
+
+            <thead>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednedsday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+
+                </tr>
+            </thead>
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+
+            </tr>
+
+            <tr>
+
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+
+
+
+            </tr>
+
+            <tr>
+
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+
+
+
+            </tr>
+
+            <tr>
+
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+
+
+
+            </tr>
+
+            <tr>
+
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+
+
+
+                </tbody>
+            </tr>
+
+
+
+
+        </table>
+
+    </div>
+
+
+    
+
+    <script>
+    function mouseOver() {
+        var element = document.getElementById('month');
+        var element2 = document.getElementById('table');
+         
+        if(element.innerText =='July 2020'){
+             
+            element.innerText = 'Tamuz 5780';
+            element.style.color = 'darkred';
+           
+         }
+         else{
+            element.innerText = 'July 2020';
+            element.style.color = 'darkgreen';
+
+         }
+      
+  
+    }
+    
+  
+    </script>
+
+
+
+</body>
+
+</html>
