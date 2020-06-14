@@ -12,9 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
 
     <style>
-        
         h1 {
             color: green;
+            width: 25%;
+            margin: auto;
+            font-size: 40px;
+
         }
 
         #contactdiv {
@@ -52,11 +55,13 @@
         .divtable {
             max-width: 100%;
             text-align: center;
-            margin-top: 150px;
+            margin-top: 40px;
+
+
         }
 
         table {
-            max-width:100%;
+
             margin: auto;
             border-collapse: collapse;
             box-sizing: border-box;
@@ -67,32 +72,24 @@
         th {
             border: 4px solid darkgreen;
             padding: 25px;
-            
+
             font-weight: bolder;
         }
 
 
 
-        @media only screen and (max-width: 800px) {
-            td,th{
-                
-                padding:0px;
+        @media only screen and (max-width: 900px) {
+
+            td,
+            th {
+
+                padding: 0px;
                 box-sizing: border-box;
             }
         }
 
-        .divtable h1 {
-            font-size: 40px;
-            color:red;
 
-        } 
 
-        .divtable h1:hover{
-         
-         
-        }
-
-        
 
 
         tbody tr:hover,
@@ -109,7 +106,14 @@
 
         }
 
-  
+
+        #Hdiv {
+            text-align: center;
+            width: 100%;
+            margin-top: 70px;
+            margin-left: auto;
+
+        }
     </style>
 </head>
 
@@ -145,8 +149,18 @@
             </p>
     </div>
 
-    <div class="divtable">
+
+    <div id="Hdiv">
+
         <h1 id="month" onmouseover="mouseOver()">July 2020</h1>
+
+    </div>
+
+
+
+    <div class="divtable">
+
+
 
         <table id="table">
 
@@ -241,29 +255,31 @@
     </div>
 
 
-    
+
 
     <script>
-    function mouseOver() {
-        var element = document.getElementById('month');
-        var element2 = document.getElementById('table');
-         
-        if(element.innerText =='July 2020'){
-             
-            element.innerText = 'Tamuz 5780';
-            element.style.color = 'darkred';
-           
-         }
-         else{
-            element.innerText = 'July 2020';
-            element.style.color = 'darkgreen';
 
-         }
-      
-  
-    }
-    
-  
+
+        function mouseOver() {
+            var element = document.getElementById('month');
+
+
+            if (element.innerText == 'July 2020') {
+
+                element.innerText = 'Tamuz 5780';
+                element.style.color = 'darkgreen';
+
+            }
+            else {
+                element.innerText = 'July 2020';
+                element.style.color = 'darkgreen';
+
+            }
+
+
+        }
+
+
     </script>
 
 
