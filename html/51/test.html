@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="images/candy.png">
+</head>
+
+<style>
+    body {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        font-family: Helvetica, Arial, sans-serif;
+        gap: 10px;
+
+    }
+
+    body>* {
+        grid-column: 1/-1;
+    }
+
+    header {
+        background-color: black;
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+ 
+
+
+
+    }
+
+    footer {
+        padding-left: 6em;
+        padding-top: 20px;
+        background-color: black;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+       
+        
+
+    }
+
+    ul li {
+        display: inline;
+        padding: 1em;
+
+        list-style: none;
+
+
+
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: lightblue;
+    }
+
+
+    #jumbo {
+        background-color: lightgray;
+        grid-column: 2/15;
+        height: 100px;
+        margin-top: 3em;
+        padding-top: 3em;
+        padding-bottom: 2em;
+        border-radius: 8px;
+
+
+
+    }
+
+    /*
+  #jumbo #jumboDiv{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+*/
+    #jumbo #jumboDiv {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-weight: bolder;
+
+    }
+
+    #jumboDiv h1 {
+        text-transform: uppercase;
+    }
+
+
+    #signup {
+
+        background-color: lightgray;
+        grid-column: 2/15;
+
+        margin-top: 3em;
+
+        text-align: center;
+        border-radius: 8px;
+        text-transform: capitalize;
+
+    }
+
+    /*
+    #signDiv {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+
+    }
+    */
+
+    #button {
+        text-transform: capitalize;
+        margin: 10px;
+    }
+
+
+
+
+
+    aside {
+        text-align: center;
+        grid-column: 2/15;
+
+    }
+
+    #computer {
+        grid-column: 2/15;
+        text-align: center;
+    }
+
+    #computer img {
+
+        width: 100%;
+
+
+    }
+
+    #video {
+        grid-column: 2/15;
+        text-align: center;
+
+    }
+
+    #video video {
+        width: 100%;
+    }
+
+    #candy {
+        grid-column: 2/15;
+        text-align: center;
+    }
+
+    #candy img {
+        width: 100%;
+    }
+
+    /*
+    #computer{
+      
+
+    }
+    
+    #video{
+        grid-column: 6/10;
+        grid-row:9/15;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        padding:5px;
+        box-sizing: border-box;
+    }
+
+    #video video{
+        width:100%;
+    }
+
+
+  #candy{
+        grid-column: 10/14;
+        grid-row:9/16
+  }
+  #candy img{
+      width:100%;
+  }
+
+  */
+    #financials {
+        grid-column: 2/15;
+    }
+
+    .divtable {
+        grid-column: 4/13;
+        overflow: auto;
+        text-align: center;
+    }
+
+
+    table {
+        table-layout: auto;
+        margin: auto;
+        font-size: 20px;
+        border-collapse: collapse;
+
+    }
+
+    td,
+    th {
+
+        border: 4px solid black;
+        text-align: right;
+
+        font-weight: bolder;
+
+    }
+
+    tr,
+    th {
+        text-align: center;
+    }
+
+    tbody tr:nth-child(odd) {
+
+        background-color: lightcyan;
+
+
+    }
+
+    table tr td:last-child {
+        color: red;
+    }
+
+
+    tbody>tr:last-child>td {
+        background-color: white;
+
+
+    }
+
+    #aboutus {
+        grid-column: 2/15;
+    }
+
+    @media screen and (min-width: 950px) {
+        body {
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+
+            gap: 10px;
+        }
+
+
+        #computer {
+
+            grid-column: 2/6;
+
+        }
+
+        #computer img {
+
+            width: 100%;
+
+
+        }
+
+        #video {
+            grid-column: 6/10;
+
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #video video {
+            width: 100%;
+        }
+
+
+        #candy {
+            grid-column: 10/14;
+
+        }
+
+        #candy img {
+            width: 100%;
+
+
+
+
+
+
+
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+
+        #signup {
+
+            background-color: lightgray;
+            grid-column: 2/15;
+
+            margin-top: 3em;
+            padding-top: 2em;
+            text-align: center;
+            border-radius: 8px;
+
+        }
+
+        /*
+        #signDiv {
+            width: 50%;
+            text-align: center;
+            margin: auto;
+
+        }
+        */
+
+        #email {
+            margin-left: 10px;
+        }
+
+        #signDiv button {
+            margin: 10px;
+        }
+    }
+</style>
+
+
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#computer">Product</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#financials">Financials</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <section id="jumbo">
+
+        <div id="jumboDiv">
+            <h1>estuff</h1>
+
+            <p>A <i>PCS</i> Company</p>
+        </div>
+
+
+    </section>
+
+
+
+    <aside>
+        <h3>Products</h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam architecto possimus earum, neque impedit
+                beatae ex. Repellat, in ullam vel hic nesciunt voluptas? </p>
+    </aside>
+
+    <div id="computer">
+        <h2>Computer</h2>
+
+        <img src="images/macworld.jpg" alt="computer">Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Consequuntur distinctio explicabo illo laudantium velit, excepturi eum voluptatem. Quae
+        tempora qui quia accusamus quidem unde?
+    </div>
+
+    <div id="video">
+        <h2>Choirs</h2>
+
+        <video src="video/El Hanaar Hazeh.mp4" controls preload="metadata" poster="images/shira.png"></video>
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. T
+        enetur deleniti officiis aspernatur cupiditate, illo soluta te
+
+    </div>
+
+    <div id="candy">
+        <h2>Candy</h2>
+
+        <img src="images/candy.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit aperiam vitae, ipsa aliquam
+            consequuntur vel molestias debitis quo voluptate illo error,
+            accusamus ex possimus!</p>
+
+    </div>
+
+
+
+
+    <section id="signup">
+
+
+
+
+
+        <h1>sign me up !</h1>
+        <form method="Post">
+
+
+            <div id="container">
+                <div id="name">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Your Name" name="name">
+                </div>
+                <br>
+                <div id="email">
+                    <label for="name">Email:</label>
+                    <input type="text" placeholder="Your Email" name="Email">
+                </div>
+            </div>
+
+
+
+
+            <br>
+            <button id="button" type="submit">sign me up!</button>
+
+
+        </form>
+
+
+
+    </section>
+    <div id="financials">
+        <h1>Financials</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus facilis impedit fugit corrupti ipsum
+            obcaecati nostrum repudiandae temporibus, a neque! Illum iste architecto officia porro fugit, commodi odit
+            consectetur modi?</p>
+
+    </div>
+
+
+    <div class="divtable">
+
+        <h2>Profits - By Quarter</h1>
+
+            <table id="table">
+
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>1st Quarter Profits</th>
+                        <th>2nd Quarter Profits</th>
+                        <th>3rd Quarter Profits</th>
+                        <th>4th Quarter Profits</th>
+                        <th>Total</th>
+
+
+                    </tr>
+                </thead>
+
+                <tr>
+
+                    <td>2012</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+
+
+
+
+                </tr>
+
+                <tr>
+
+                    <td>2013</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$12456.32</td>
+                    <td>1125456.32</td>
+
+
+
+
+                </tr>
+
+                <tr>
+
+                    <td>2014</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+
+
+
+
+                </tr>
+
+                <tr>
+
+                    <td>2015</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+                    <td>$125456.32</td>
+
+
+
+                </tr>
+
+                <tr>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>$125456.32</td>
+
+
+
+                    </tbody>
+                </tr>
+
+
+
+
+            </table>
+
+    </div>
+
+
+    <div id="aboutus">
+        <h1>About Us</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, officiis dicta. Suscipit deserunt nisi
+            aperiam voluptates culpa consequatur! Quam voluptate ea dolorum mollitia, laudantium aspernatur qui et
+            inventore perferendis corrupti neque placeat? Aliquam voluptas, pariatur similique doloribus saepe beatae.
+            Cum odio totam, nam, voluptate non dolores et qui quasi eum earum repellendus! Possimus ab aut reiciendis
+            excepturi quia minima incidunt blanditiis necessitatibus dolore neque? Omnis, tempora consequatur veritatis
+            sed fugiat est natus facere nam repudiandae temporibus. Praesentium at esse, nesciunt aliquam omnis in aut
+            ut voluptate hic autem voluptates quaerat error quibusdam tempore saepe labore distinctio libero nulla quos
+            facere consectetur quae dolore magnam! Quis ut blanditiis et rem molestias assumenda magnam repellat,
+            pariatur nostrum quibusdam ad aliquam fugit eaque eligendi cumque voluptatibus sint voluptate explicabo,
+            necessitatibus quam officiis ipsum maxime accusamus? Magnam culpa modi sint iste iure quo, incidunt
+            repudiandae minus nostrum suscipit illo cum impedit optio mollitia, veniam quae asperiores atque molestiae.
+            Blanditiis exercitationem molestias atque autem voluptatum perferendis eius impedit dolores dolorum harum
+            eos magni beatae excepturi, fuga explicabo alias vero, qui commodi incidunt maiores in laborum dignissimos
+            corrupti. Quis aut illo veritatis iste dolore alias sunt unde asperiores nam, nostrum culpa optio velit quae
+            officia explicabo autem corporis beatae, commodi esse quasi! Repudiandae similique corrupti fugit magnam,
+            veritatis nam possimus, sequi laboriosam necessitatibus exercitationem et dolorum corporis ratione,
+            obcaecati qui! Adipisci aspernatur nulla expedita quis inventore voluptas quaerat numquam esse omnis
+            veritatis explicabo, ipsum eius. Ipsam enim praesentium illum voluptatibus laborum asperiores doloremque
+            nesciunt, a earum sunt quia excepturi repellat officia, magnam possimus quod nisi beatae voluptatem alias
+            soluta exercitationem esse doloribus error nobis. Eaque porro amet, consequatur eius cupiditate labore,
+            expedita illo sed, asperiores id laborum aliquid tempora optio quae fugiat nostrum iusto animi assumenda.
+            Natus consequatur sit saepe dolorum eveniet rerum neque perspiciatis a quidem, omnis, quia necessitatibus.
+            Sed temporibus inventore qui nam earum asperiores aspernatur cumque nobis eum saepe iste adipisci deleniti
+            cum harum voluptates tempore similique praesentium, est tempora. Sapiente dolorem doloremque cupiditate?
+            Dolores aliquid ut facere exercitationem distinctio in numquam tenetur autem eveniet quibusdam provident,
+            illo perspiciatis expedita magni quaerat voluptas voluptates molestias ab obcaecati quos deserunt natus
+            rerum! Omnis modi voluptatibus nam aliquam eligendi, illo repellendus harum rem provident cupiditate eius a
+            dolore reiciendis, nostrum in? Ipsa debitis voluptatem similique beatae itaque inventore ea quod assumenda.
+            Eveniet voluptates cum expedita mollitia illum facere dolorem, suscipit quia necessitatibus voluptas dolore
+            corporis, accusantium distinctio rem doloremque labore dicta impedit voluptatibus? Velit, sint consectetur
+            accusamus eligendi reprehenderit mollitia, nisi animi illo maiores quae ducimus esse corrupti. Dignissimos
+            asperiores animi labore. Est neque libero sint cupiditate sit placeat doloremque dolorum repellat! Non
+            deserunt quae architecto repellendus, voluptas debitis ea sunt doloremque, animi possimus quos illo et
+            voluptatum aut repudiandae exercitationem fuga officiis reiciendis? Recusandae, ipsam. Rerum deleniti
+            voluptatum assumenda aperiam numquam necessitatibus, repellendus enim earum! Odio, officia id. Deleniti
+            quidem, laboriosam doloremque accusantium, vitae porro quisquam aliquam consequatur cumque ab nisi,
+            architecto numquam quos et provident saepe laudantium vero eaque ipsam quas. Tenetur, fuga.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+     
+        &copy; PCS 2020
+    </footer>
+
+
+</body>
+
+</html>
