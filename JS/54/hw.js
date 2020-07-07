@@ -32,13 +32,17 @@ function getMultiplier2(num1){
 
 }
 
-var multiplyBy5 = getMultiplier2(5);
+let multiplyBy5 = getMultiplier2(5);
 multiplyBy5(5);
 
 
-var multiplyBy10 = getMultiplier2(5);
+let multiplyBy10 = getMultiplier2(5);
 
 multiplyBy10(10);
+
+let multiplyBy20 = getMultiplier2(20);
+
+multiplyBy20(20);
 
 
 
