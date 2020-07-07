@@ -40,7 +40,7 @@ let multiplyBy10 = getMultiplier2(5);
 
 multiplyBy10(10);
 
-let multiplyBy20 = getMultiplier2(20);
+let multiplyBy20 = getMultiplier2(40);
 
 multiplyBy20(20);
 
