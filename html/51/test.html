@@ -18,8 +18,8 @@
 
     }
 
-    body>* {
-        grid-column: 1/-1;
+    body > * {
+        grid-column: 2/15;
     }
 
     header {
@@ -75,18 +75,14 @@
         padding-top: 3em;
         padding-bottom: 2em;
         border-radius: 8px;
-
+        font-weight: bolder;
+        text-align: center;
+        text-transform: uppercase;
 
 
     }
 
-    /*
-  #jumbo #jumboDiv{
-    width: 50%;
-    text-align: center;
-    margin: auto;
-}
-*/
+  /*
     #jumbo #jumboDiv {
         width: 50%;
         text-align: center;
@@ -94,6 +90,7 @@
         font-weight: bolder;
 
     }
+    */
 
     #jumboDiv h1 {
         text-transform: uppercase;
@@ -253,13 +250,8 @@
         grid-column: 2/15;
     }
 
-    @media screen and (min-width: 950px) {
-        body {
-            display: grid;
-            grid-template-columns: repeat(15, 1fr);
-
-            gap: 10px;
-        }
+    @media screen and (min-width: 850px) {
+       
 
 
         #computer {
@@ -307,8 +299,8 @@
 
         #container {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
+            flex-direction:row;
+            justify-content:center;
         }
 
 
@@ -362,11 +354,11 @@
 
     <section id="jumbo">
 
-        <div id="jumboDiv">
+        
             <h1>estuff</h1>
 
             <p>A <i>PCS</i> Company</p>
-        </div>
+       
 
 
     </section>
@@ -418,21 +410,23 @@
 
 
         <h1>sign me up !</h1>
-        <form method="Post">
+        <form  method="Post">
 
 
             <div id="container">
                 <div id="name">
                     <label for="name">Name:</label>
-                    <input type="text" placeholder="Your Name" name="name">
+                    <input type="text" placeholder="Your Name" name="name" required>
                 </div>
                 <br>
                 <div id="email">
                     <label for="name">Email:</label>
-                    <input type="text" placeholder="Your Email" name="Email">
+                    <input type="email" placeholder="Your Email" name="Email" required>
                 </div>
             </div>
 
+
+           
 
 
 
@@ -530,11 +524,8 @@
 
                 <tr>
 
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Total</td>
+                  
+                    <td colspan="5">Total</td>
                     <td>$125456.32</td>
 
 
