@@ -28,7 +28,7 @@ function getMultiplier2(num1){
    
      return function(num2){
         console.log(`${num1} * ${num2} = ${num1 * num2}`);
-     }
+     };
 
 }
 
