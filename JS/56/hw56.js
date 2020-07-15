@@ -42,13 +42,13 @@ const calculatorMod = (function(){
     },
 
     calculateInterest:function(principle, rate , years){
-      return principle * this.setRate(rate) * this.setYears(years);
+      return Math.round(principle * this.setRate(rate) * this.setYears(years));
     }
  };
   
 })();
 
-console.log(calculatorMod.calculateInterest(100,1.1 , 3));
+console.log(calculatorMod.calculateInterest(200,1.1 ,1));
 
 
 
