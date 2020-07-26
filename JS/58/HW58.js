@@ -70,6 +70,11 @@
    
    transaction1.Transaction(100);
    console.log(`Bank1 Deposit +${oldBalance} ---- New Balance: ${transaction1.balance}`);
+     
+   transaction1.Transaction(-50);
+  // oldBalance = transaction1.balance;
+
+   console.log(`Bank1 Withdrawal -50 ---- New Balance: ${transaction1.balance}`);
 
 
 
@@ -81,9 +86,7 @@
 
     
    performTransaction.call(transaction2, 40);
+  
+
    
-  
-
-  
-
  }());
