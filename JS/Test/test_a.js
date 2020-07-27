@@ -15,11 +15,11 @@
         let bool = true;
  
          theArray.forEach(element => {
-             bool = callback(element);
+          bool = callback(element);
            
-             if(bool){
+            // if(bool){
                 newArray.push(callback(element));
-             }
+            // }
         
            
         });
@@ -32,14 +32,15 @@
 
 
 //Making a new array that all numbers are double the first array 
- const double = mapArray(numberArray, x => x * 2);
+ //const double = mapArray(numberArray, x => x * 2);
   //console.log(double);
 //Making a new array that makes all strings uppercasae
-  const uppercase = mapArray(lowercaseArray, x => x.toUpperCase());
+//  const uppercase = mapArray(lowercaseArray, x => x.toUpperCase());
  // console.log(uppercase);
 
 
-  // Makes a new array for numbers that are larger than 2
+  //Makes a new array for numbers that are larger than 2
+  
   const numbers = mapArray(numberArray, x => {
                 if(x > 2){
                     return x;
@@ -48,13 +49,14 @@
            
          });
  
-      //  console.log(numbers);
+        console.log(numbers);
 
 
 
 
 
     }());
+
 
 
 //Question 2 / A:
@@ -82,7 +84,7 @@ return app;
 
 
 
-/*
+
 let t1 = window.app;
 let t2 = window.app;
 
@@ -104,33 +106,10 @@ console.log('Bye',t2.increment());
 console.log('TEST 1 increment',test1.increment());
 
 console.log(window.app.increment());
-//console.log('Get Counter',window.app.getcounter);
+console.log('Get Counter',window.app.getcounter);
 
 console.log(window.app.increment());
-//console.log('Get Counter',window.app.getcounter);
+console.log('Get Counter',window.app.getcounter);
 
 console.log(window.app.increment());
-//console.log('Get Counter',window.app.getcounter);
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//console.log();
+console.log('Get Counter',window.app.getcounter);
