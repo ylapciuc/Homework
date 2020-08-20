@@ -3,35 +3,35 @@
 
 (function(){
     'use strict';
-   
-   
+
+
     const lowercaseArray =['jack','donald','jared'];
     const numberArray = [2,4,6];
 
 
     function mapArray(theArray,callback){
-       
+
         const newArray = [];
         let bool = true;
- 
+
          theArray.forEach(element => {
              bool = callback(element);
-           
+
              if(bool){
                 newArray.push(callback(element));
              }
-        
-           
+
+
         });
             return newArray;
     }
 
 
-  
 
 
 
-//Making a new array that all numbers are double the first array 
+
+//Making a new array that all numbers are double the first array
  const double = mapArray(numberArray, x => x * 2);
   //console.log(double);
 //Making a new array that makes all strings uppercasae
@@ -44,10 +44,10 @@
                 if(x > 2){
                     return x;
                 }
-        
-           
+
+
          });
- 
+
       //  console.log(numbers);
 
 
@@ -56,16 +56,19 @@
 
     }());
 
-
+// SL - in future, better to keep different things in different files
 //Question 2 / A:
 
 window.app = (function(app){
  'use strict';
 
+ // SL - this isnt private, anyone can change it like this
+ // app.getcounter = 'foo'...
+ // should have been a local variable in function, kept alive by returned closure
  app.getcounter = 0;
- 
+
  app.increment = function(){
-   
+
 
     return ++this.getcounter;
   };

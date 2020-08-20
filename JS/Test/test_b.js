@@ -1,33 +1,33 @@
-
+// SL - not keeping track of number of counters.
 
 window.app = (function(app){
  'use strict';
- 
+
 
    //app.number = 0 ;
 
      app.createIncrement = function(){
-       
-           
+
+
         return{
-       
+             // SL - still not private...
              count: 0,
-             
+
             setIncrement: function(){
               // let count = 0;
                //return ++app.number;
 
                return ++this.count;
-                
+
             }
-            
-             
+
+
 
 
         };
   };
- 
-    
+
+
 
 
 
@@ -78,7 +78,7 @@ console.log(test2.createIncrement());
 
 
 
- 
+
 
 
 

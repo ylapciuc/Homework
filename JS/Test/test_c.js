@@ -1,3 +1,6 @@
+// SL - 80
+// SL - looks like maybve you can use a review of the idea of closures and how they can keep "private" data
+// from parent environment alive
 
 // Ten of the same incremtented function
 let test1 = window.app;
