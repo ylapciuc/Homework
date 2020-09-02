@@ -46,8 +46,7 @@
   
   btnTime.addEventListener('click',()=>{
   
-    clearInterval(stopwatch);
-   
+  clearIntervals();
    
     clock = setInterval(()=>{
   
@@ -64,7 +63,7 @@
 
   
   btnStopwatch.addEventListener('click',()=>{
-    clearInterval(clock);
+   clearIntervals();
   stopwatch = setInterval(() => {
    
    // This is a clock that doesnt tell time its more like a stopwatch
@@ -104,13 +103,19 @@
 
 });
    
-  
-  btnStop.addEventListener('click',()=>{
+function clearIntervals(){
+  hours = 0 ;
+  mintues = 0 ;
+  seconds = 0;
    clearInterval(clock);
    clearInterval(stopwatch);
-   hours = 0 ;
-   mintues = 0 ;
-   seconds = 0;
+   
+}
+
+
+  
+  btnStop.addEventListener('click',()=>{
+     clearIntervals();
   });
   
   
