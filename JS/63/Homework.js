@@ -13,7 +13,7 @@
 
   let clock ;
   let stopwatch;
-  let seconds = 0;
+  let seconds =0;
   let mintues = 0;
   let hours = 0;
   
@@ -90,10 +90,10 @@
    
         if(mintues< 10){
    
-          label.innerHTML = `${hours}:0${mintues} ${++seconds}`;
+          label.innerHTML = `${hours}:0${mintues} ${seconds++}`;
         }
         else{
-          label.innerHTML = `${hours}:${mintues} ${++seconds}`;
+          label.innerHTML = `${hours}:${mintues} ${seconds++}`;
         }
         
    
@@ -108,6 +108,9 @@
   btnStop.addEventListener('click',()=>{
    clearInterval(clock);
    clearInterval(stopwatch);
+   hours = 0 ;
+   mintues = 0 ;
+   seconds = 0;
   });
   
   
