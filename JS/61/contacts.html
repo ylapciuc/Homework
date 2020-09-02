@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+   table{
+       width:80%;
+       margin:auto;
+       border-collapse: collapse;
+       margin-bottom: 2em;
+   }
+   
+   th,td{
+       border:1px solid black;
+   }
+
+#contactForm{
+    background-color: lightblue;
+    width:16em;
+    padding:1em;
+    box-sizing: border-box;
+    position:absolute;
+    top:20%;
+    left:50%;
+    margin-left: -8em;
+    height: 17em;
+    display: none;
+
+}
+.formGroup{
+    margin-bottom: .5em;
+    text-align: center;
+   
+
+}
+
+.formGroup label{
+    width:4.9em;
+    display: inline-block;
+}
+
+#buttons{
+    text-align: center;
+}
+
+</style>
+
+<body>
+
+    <button id="add">Add Contact</button>
+    <table id="contacts">
+        <thead>
+            <tr>
+                <th>first</th>
+                <th>last</th>
+                <th>email</th>
+                <th>phone</th>
+                <th></th>
+           </tr>
+     </thead>
+
+     <tbody>
+  
+         <tr>
+          <td colspan="5">No Contact Loaded</td>
+
+         </tr>
+
+
+     </tbody>
+
+
+
+    </table>
+
+     <form id="contactForm">
+
+   <div class='formGroup'>
+    <label for="first">First Name</label>
+    <input id="first">
+   </div>
+
+   <div class='formGroup'>
+    <label for="last">Last Name</label>
+    <input id="last">
+   </div>
+
+   <div class='formGroup'>
+    <label for="email">Email</label>
+    <input id="email" type='email' required>
+   </div>
+
+   <div class='formGroup'>
+    <label for="phone">Phone</label>
+    <input id="phone">
+   </div>
+  <div id = "buttons">
+      <button>Add</button>
+      <button type="button" id="cancel">Cancel</button>
+  </div>
+
+     </form>
+
+    <script src="contacts.js"></script>
+</body>
+
+</html>

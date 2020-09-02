@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="msgText"> <button id="addMsg">Add</button>
+    <hr>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, beatae non ducimus quod vero veniam laborum illum nisi ipsam, placeat unde, assumenda maiores repudiandae dolorum adipisci provident ipsum sunt dolores nihil enim sit asperiores? Tempore pariatur accusamus cumque dolores dicta quibusdam, qui ipsam. Vel, cum eum? Hic ipsum totam nostrum excepturi et eveniet! Aperiam itaque, impedit provident asperiores rem harum? Perferendis, enim quas tempora tenetur illum placeat, voluptas eum praesentium aliquid maiores ipsa? Eveniet odio atque vitae incidunt! Sit fugiat esse itaque earum repellat asperiores doloremque dignissimos est, iure consequatur facere veritatis rem quae! Eum aperiam qui eveniet dolor aliquid!
+   <script src="messageBox.js"></script>
+   
+   
+   <script>pcs.messageBox.show('This is a test of the emergency broadcast system!');
+     const msgTextInput = document.getElementById('msgText');
+     document.getElementById('addMsg').addEventListener('click',()=>{
+         pcs.messageBox.show(msgTextInput.value);
+     });
+
+
+
+      pcs.messageBox.show('Is this enough Homework',['Yes','No','Maybe'],
+      userChoise => console.log('You picked '+ userChoise));
+      
+
+    </script>
+</body>
+</html>
