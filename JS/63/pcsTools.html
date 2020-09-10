@@ -44,15 +44,23 @@
         console.log(donald.css('color'));
       
 */
-        pcs.tools.wrap('donald')
+       const donald = pcs.tools.wrap('donald')
         .css('color','blue')
-        .click(()=> console.log('The Donad was clicked!')).hide().show();
+        .sparkle(7000, 'slow')
+        .click(()=> {
+        let clickCount = donald.data('clicks') || 0;
+        donald.data('clicks',++clickCount);
+         console.log(`The Donald was clicked ${clickCount}`);
+       
+       
+        });
+
         
 
 
 
         const joe = pcs.tools.wrap('joe');
-        joe.css('color','red');
+        joe.css('color','red').sparkle();
      
          console.log(joe.css('color'));
     </script>

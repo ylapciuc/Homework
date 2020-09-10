@@ -19,11 +19,23 @@
   
   //const btn = document.getElementById('btn');
 
-  const label = document.createElement("h1");
+  const label = document.createElement("div");
   const btnTime = document.createElement('button');
   const btnStopwatch = document.createElement('button');
   const btnStop = document.createElement('button');
   
+   label.style.border = '3px solid black';
+   label.style.width = '10%';
+    /* margin-bottom: 133px; */
+   label.style.padding = '3em';
+   label.style.backgroundColor = 'beige';
+   label.style.fontSize ='27px';
+   label.style.color = 'red';
+   label.style.fontweight ='bold';
+   label.style.marginBottom = '20px';
+
+
+
   btnTime.innerHTML = 'Current Time';
   btnStopwatch.innerHTML = 'Stopwatch';
   btnStop.innerHTML = 'Stop';
@@ -31,9 +43,9 @@
   let btnArray = [btnTime , btnStopwatch , btnStop];
 
     for(let x = 0 ; x < btnArray.length;x++){
-         if(x > 0){
+       
             btnArray[x].style.marginLeft = '12px';
-         }
+         
     }
 
 
