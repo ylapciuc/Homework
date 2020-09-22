@@ -2,13 +2,14 @@
 'use strict';
 
 const filenameInput = $('#fileName');
+const result = $('#result');
 
 
 $('#load').click(()=>{
   
     fetch(filenameInput.val())
     .then(r => r.text())
-    .then(rt => console.log(rt))
+    .then(rt => result.text(rt))
     .catch(err => console.log('oops', err));
  
 });
